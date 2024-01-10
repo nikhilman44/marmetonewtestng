@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [IplDashboardAppTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="HomePageTest(failed)">
+    <classes>
+      <class name="TeamPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="teampage"/>
+        </methods>
+      </class> <!-- TeamPageTest -->
+      <class name="HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="headingofhomepage"/>
+          <include name="listofteamhomepage"/>
+        </methods>
+      </class> <!-- HomePageTest -->
+    </classes>
+  </test> <!-- HomePageTest(failed) -->
+</suite> <!-- Failed suite [IplDashboardAppTestSuite] -->
