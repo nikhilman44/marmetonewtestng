@@ -2,8 +2,7 @@
 <suite name="MoviesAppTestSuite2" parallel="classes" thread-count="2">
     <test name="Movies App Test" >
         <classes>
-            <class name="TestRunner" />
-
+            <class name="AdditionGameTest" />
         </classes>
     </test>
 </suite>
