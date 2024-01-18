@@ -1,8 +1,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="MoviesAppTestSuite2" parallel="classes" thread-count="2">
-    <test name="Movies App Test" >
+<suite name="marmetoAssment" parallel="classes" thread-count="2">
+    <test name="marmeto assment Test" >
         <classes>
-            <class name="AdditionGameTest" />
+            <class name="checkToggleCase" />
+            <class name="checkPriceAmountDisplay" />
+            <class name="checkTagOnImages"/>
         </classes>
     </test>
 </suite>
