@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7dca0aca-7234-411c-a780-5bd680507071" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AdditionGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/marmetoAssmentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/AdditionGameTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/checkPriceAmountDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/checkPriceAmountDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/checkTagOnImages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/checkTagOnImages.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/checkPriceAmountDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-989">
-              <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+            <state relative-caret-position="170">
+              <caret line="28" column="75" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/checkTagOnImages.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="97" column="35" lean-forward="true" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
+            <state relative-caret-position="318">
+              <caret line="197" column="87" selection-start-line="197" selection-start-column="87" selection-end-line="197" selection-end-column="87" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -194,8 +193,8 @@
         <option value="$PROJECT_DIR$/src/test/java/containsTextOnImage.java" />
         <option value="$PROJECT_DIR$/src/test/java/checkToggleCase.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/checkTagOnImages.java" />
         <option value="$PROJECT_DIR$/src/test/java/checkPriceAmountDisplay.java" />
+        <option value="$PROJECT_DIR$/src/test/java/checkTagOnImages.java" />
       </list>
     </option>
   </component>
@@ -256,7 +255,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1705579771868" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1705582444081" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Selenium coding practice/CP 4" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -396,8 +395,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="830" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3671141" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3671141" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -411,7 +411,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49932885" visible="true" weight="0.3295129" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49932885" visible="true" weight="0.3295129" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50067115" side_tool="true" weight="0.3295129" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.247851" />
@@ -543,16 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/checkTagOnImages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="97" column="35" lean-forward="true" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/checkToggleCase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1527">
@@ -565,8 +555,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/checkPriceAmountDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-989">
-          <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+        <state relative-caret-position="170">
+          <caret line="28" column="75" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/checkTagOnImages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="197" column="87" selection-start-line="197" selection-start-column="87" selection-end-line="197" selection-end-column="87" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -27,8 +27,9 @@ public class checkTagOnImages {
 
     @Test
     public void runAutomatedTests() {
+        String excelFilePath = "C:\\Users\\nikma\\myMarmetoExcelData.xlsx";
         // Step 2: Read URLs from Google Sheet
-        Map<Integer, String> studentUrls = readUrlsFromGoogleSheet();
+        Map<Integer, String> studentUrls = readUrlsFromGoogleSheet(excelFilePath);
         System.out.println(studentUrls);
         // Step 3: Automate the Testing with Selenium
         Map<Integer, String> testResults = new HashMap<>();
@@ -54,14 +55,14 @@ public class checkTagOnImages {
             }
         }
         // Step 5: Update Google Sheet with Test Results
-        updateGoogleSheetWithResults(testResults);
-        updateGoogleSheetWithMistakes(testMistakes);
+        updateGoogleSheetWithResults(testResults,excelFilePath);
+        updateGoogleSheetWithMistakes(testMistakes,excelFilePath);
     }
 
 
-    private static Map<Integer, String> readUrlsFromGoogleSheet() {
+    private static Map<Integer, String> readUrlsFromGoogleSheet(String excelFilePath) {
         Map<Integer, String> studentUrls = new HashMap<>();
-        try (FileInputStream fileInputStream = new FileInputStream("C:\\Users\\nikma\\myMarmetoExcelData.xlsx")) {
+        try (FileInputStream fileInputStream = new FileInputStream(excelFilePath)) {
             Workbook workbook = WorkbookFactory.create(fileInputStream);
             Sheet sheet = workbook.getSheetAt(0); // Assuming data is on the first sheet
 
@@ -156,8 +157,8 @@ public class checkTagOnImages {
         return new String[]{String.valueOf(final_result), mistakes};
     }
 
-    private static void updateGoogleSheetWithResults(Map<Integer, String> testResults) {
-        try (FileInputStream fileInputStream = new FileInputStream("C:\\Users\\nikma\\myMarmetoExcelData.xlsx");
+    private static void updateGoogleSheetWithResults(Map<Integer, String> testResults, String excelFilePath) {
+        try (FileInputStream fileInputStream = new FileInputStream(excelFilePath);
              Workbook workbook = WorkbookFactory.create(fileInputStream)) {
             Sheet sheet = workbook.getSheetAt(0);
             System.out.println(testResults);
@@ -171,7 +172,7 @@ public class checkTagOnImages {
             }
 
             // Save the updated workbook
-            try (FileOutputStream fileOutputStream = new FileOutputStream("C:\\Users\\nikma\\myMarmetoExcelData.xlsx")) {
+            try (FileOutputStream fileOutputStream = new FileOutputStream(excelFilePath)) {
                 workbook.write(fileOutputStream);
             }
         } catch (IOException | EncryptedDocumentException e) {
@@ -179,8 +180,8 @@ public class checkTagOnImages {
         }
     }
 
-    private static void updateGoogleSheetWithMistakes(Map<Integer, String> testMistakes) {
-        try (FileInputStream fileInputStream = new FileInputStream("C:\\Users\\nikma\\myMarmetoExcelData.xlsx");
+    private static void updateGoogleSheetWithMistakes(Map<Integer, String> testMistakes, String excelFilePath) {
+        try (FileInputStream fileInputStream = new FileInputStream(excelFilePath);
              Workbook workbook = WorkbookFactory.create(fileInputStream)) {
             Sheet sheet = workbook.getSheetAt(0);
             System.out.println(testMistakes);
@@ -194,7 +195,7 @@ public class checkTagOnImages {
             }
 
             // Save the updated workbook
-            try (FileOutputStream fileOutputStream = new FileOutputStream("C:\\Users\\nikma\\myMarmetoExcelData.xlsx")) {
+            try (FileOutputStream fileOutputStream = new FileOutputStream(excelFilePath)) {
                 workbook.write(fileOutputStream);
             }
         } catch (IOException | EncryptedDocumentException e) {
